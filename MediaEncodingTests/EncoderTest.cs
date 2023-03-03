@@ -1,5 +1,6 @@
 ﻿using System;
 using MediaEncoding.Encoder;
+using MediaEncoding.Encoder.Video;
 
 namespace MediaEncodingTests
 {
@@ -33,7 +34,7 @@ namespace MediaEncodingTests
             var basicPath = AppContext.BaseDirectory;
             var encoder = new EncoderVideo($"{basicPath}/{EncoderTest.EXAMPLE_VIDEO_FOLDER}/NO_ICE_MAN.mp4")
             {
-                 VideoSize = FFMpegCore.Enums.VideoSize.Hd
+                VideoSize = FFMpegCore.Enums.VideoSize.Hd
             };
 
             var outputFile = $"{BasicPath}/{EncoderTest.VIDEO_TEST_OUTPUT_FOLDER}/NO_ICE_MAN_TESTE.mp4";

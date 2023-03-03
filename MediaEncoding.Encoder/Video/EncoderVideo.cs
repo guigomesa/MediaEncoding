@@ -2,15 +2,14 @@
 using FFMpegCore;
 using FFMpegCore.Enums;
 
-namespace MediaEncoding.Encoder
+namespace MediaEncoding.Encoder.Video
 {
-    public class EncoderVideo : Encoder, IMediaEncoder
+    public class EncoderVideo : Encoder, IVideoEncoder
     {
         public double? ConstantRateFactor { get; set; }
         public Codec? VideoCodec { get; set; }
-        public VideoSize VideoSize { get; set; }
+        public VideoSize? VideoSize { get; set; }
         public double? VariableBitrate { get; set; }
-
 
         public EncoderVideo(string originalFile) : base(originalFile)
         {
@@ -35,7 +34,7 @@ namespace MediaEncoding.Encoder
                 this.VideoCodec = FFMpeg.GetCodec(OriginalMediaInfo.PrimaryVideoStream.CodecName);
 
             if (this.VideoSize == null)
-                this.VideoSize = VideoSize.Original;
+                this.VideoSize = FFMpegCore.Enums.VideoSize.Original;
 
             if (!this.VariableBitrate.HasValue)
                 this.VariableBitrate = OriginalMediaInfo.PrimaryVideoStream.BitRate;
@@ -55,7 +54,7 @@ namespace MediaEncoding.Encoder
                 options => options.WithVideoCodec(this.VideoCodec)
                 .WithConstantRateFactor((int) this.ConstantRateFactor)
                 .WithVariableBitrate((int) this.VariableBitrate)
-                .WithVideoFilters(filterOption => filterOption.Scale(this.VideoSize))
+                .WithVideoFilters(filterOption => filterOption.Scale(this.VideoSize.Value))
                 .WithFastStart())
                 .ProcessAsynchronously();
 
