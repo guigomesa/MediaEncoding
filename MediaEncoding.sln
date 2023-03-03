@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{8D206697-32F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitConsumer", "RabbitConsumer", "{47B57AA8-A860-4F02-8019-2A8A54E0E851}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaEncoding.WorkerConsumer", "MediaEncoding.WorkerConsumer\MediaEncoding.WorkerConsumer\MediaEncoding.WorkerConsumer.csproj", "{0421BE6D-1044-499C-B756-EBFE7DB3AA17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaEncoding.WorkerConsumer.ServiceModel", "MediaEncoding.WorkerConsumer\MediaEncoding.WorkerConsumer.ServiceModel\MediaEncoding.WorkerConsumer.ServiceModel.csproj", "{CC0DE6C1-675B-4A58-B347-7295C3F60C98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{63C7356A-0880-4AA8-98F2-0929E21ED22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63C7356A-0880-4AA8-98F2-0929E21ED22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63C7356A-0880-4AA8-98F2-0929E21ED22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0421BE6D-1044-499C-B756-EBFE7DB3AA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0421BE6D-1044-499C-B756-EBFE7DB3AA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0421BE6D-1044-499C-B756-EBFE7DB3AA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0421BE6D-1044-499C-B756-EBFE7DB3AA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0DE6C1-675B-4A58-B347-7295C3F60C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0DE6C1-675B-4A58-B347-7295C3F60C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0DE6C1-675B-4A58-B347-7295C3F60C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0DE6C1-675B-4A58-B347-7295C3F60C98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +67,7 @@ Global
 		{B39FADC2-C06F-4D7E-AAC1-6B049A5AF7AF} = {C21DA9F2-4BE9-40E4-8DA8-0C68E1002906}
 		{731D41AF-90CA-42C5-B63E-E73E18104B11} = {8D206697-32F7-4DE3-B486-543454527FC6}
 		{63C7356A-0880-4AA8-98F2-0929E21ED22F} = {719142B7-5839-44DE-9ABD-F153F73C9736}
+		{0421BE6D-1044-499C-B756-EBFE7DB3AA17} = {47B57AA8-A860-4F02-8019-2A8A54E0E851}
+		{CC0DE6C1-675B-4A58-B347-7295C3F60C98} = {47B57AA8-A860-4F02-8019-2A8A54E0E851}
 	EndGlobalSection
 EndGlobal

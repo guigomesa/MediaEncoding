@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MediaEncoding.WorkerConsumer": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
